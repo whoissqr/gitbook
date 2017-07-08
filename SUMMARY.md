@@ -1,5 +1,5 @@
 # Summary
 
-* [Kali + bWAPP + SQLInjection](README.md)
-* [First Chapter](chapter1.md)
+* [Introduction](README.md)
+* [exploit bWAPP using SQLmap](chapter1.md)
 
