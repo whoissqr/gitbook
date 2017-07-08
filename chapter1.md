@@ -1,4 +1,4 @@
-# exploit bWAPP to get use credentials using SQLmap
+# exploit bWAPP SQLmap
 
 1\) install Kali and bWAPP vm in virtual box;
 
