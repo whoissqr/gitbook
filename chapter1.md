@@ -1,16 +1,12 @@
-# Kali + bWAPP
+# exploit bWAPP to get use credentials using SQLmap
 
 1\) install Kali and bWAPP vm in virtual box;
 
 ![](/pentest/VirtualBox-2-VM.png)
 
-
-
 2\) launch bWAP and make sure it is running;
 
 ![](/pentest/bWAPP-VM.png)
-
-
 
 3\) Launch Kali and make sure you can access the bWAPP from Iceweasel.
 
@@ -20,8 +16,6 @@
 
 ![](/pentest/choose-SQL-GET.png)
 
-
-
 5\) key in a search string; copy of the resulted URL;![](/pentest/key-in-search-box.png)
 
 6\) Find out the cookie for the site;
@@ -29,8 +23,6 @@
 ![](/pentest/get-cookie-1.png)
 
 ![](/pentest/get-cookie-2.png)
-
-
 
 **Now, it is show time; launch SQLmap from terminal;**
 
