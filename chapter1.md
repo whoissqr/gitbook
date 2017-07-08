@@ -2,23 +2,33 @@
 
 1. install Kali and bWAPP vm in virtual box;
 
-   ![](/pentest/VirtualBox-2-VM.png)
+![](/pentest/VirtualBox-2-VM.png)
+
+
+
+
 
 2. launch bWAP and make sure it is running;
 
-   ![](/pentest/bWAPP-VM.png)
+![](/pentest/bWAPP-VM.png)
+
+
 
 3. Launch Kali and make sure you can access the bWAPP from Iceweasel.
 
 ![](/pentest/access-bWAPP-from-kali.png)
 
-1. Go to SQL Injection \(GET/Search\)
+
+
+4. Go to SQL Injection \(GET/Search\)
 
 ![](/pentest/choose-SQL-GET.png)
 
-1. key in a search string; copy of the resulted URL;![](/pentest/key-in-search-box.png)
 
-2. Find out the cookie for the site;
+
+5. key in a search string; copy of the resulted URL;![](/pentest/key-in-search-box.png)
+
+6. Find out the cookie for the site;
 
 ![](/pentest/get-cookie-1.png)
 
