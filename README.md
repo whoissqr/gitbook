@@ -2,7 +2,7 @@
 
 1. install Kali and bWAPP vm in virtual box;
 
-   ![](/assets/virtualbox-2-vm)
+   ![](/assets/access-bWAPP-from-kali.jpg)
 
 2. launch bWAP and make sure it is running;
 
@@ -12,25 +12,19 @@
 
 ![](/assets/acces-bWAPP-from-kali)
 
-  4. Go to SQL Injection \(GET/Search\)
+1. Go to SQL Injection \(GET/Search\)
 
 ![](/assets/sql-get)
 
+1. key in a search string; copy of the resulted URL;![](/assets/search-box)
 
-
-  5. key in a search string; copy of the resulted URL;![](/assets/search-box)
-
-  6. Find out the cookie for the site;
+2. Find out the cookie for the site;
 
 ![](/assets/get-cookie-pref)
 
 ![](/assets/get-cookie-id)
 
-
-
 **Now, it is show time; launch SQLmap from terminal;**
-
-
 
 **step1 **root@kali:~\# sqlmap -u "[http://192.168.56.101/bWAPP/sqli\_1.php?title=](http://192.168.56.101/bWAPP/sqli_1.php?title=)" --cookie="PHPSESSID=a9bd3686d9c53a3a8c0842c8886b564b;security\_level=0" --dbs
 
