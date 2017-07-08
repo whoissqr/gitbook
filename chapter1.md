@@ -1,4 +1,4 @@
-# exploit bWAPP SQLmap
+# exploit bWAPP using SQLmap
 
 1\) install Kali and bWAPP vm in virtual box;
 
@@ -8,6 +8,8 @@
 
 ![](/pentest/bWAPP-VM.png)
 
+
+
 3\) Launch Kali and make sure you can access the bWAPP from Iceweasel.
 
 ![](/pentest/access-bWAPP-from-kali.png)
@@ -15,6 +17,8 @@
 4\)  Go to SQL Injection \(GET/Search\)
 
 ![](/pentest/choose-SQL-GET.png)
+
+
 
 5\) key in a search string; copy of the resulted URL;![](/pentest/key-in-search-box.png)
 
@@ -24,7 +28,11 @@
 
 ![](/pentest/get-cookie-2.png)
 
+
+
 **Now, it is show time; launch SQLmap from terminal;**
+
+
 
 **step1 **root@kali:~\# sqlmap -u "[http://192.168.56.101/bWAPP/sqli\_1.php?title=](http://192.168.56.101/bWAPP/sqli_1.php?title=)" --cookie="PHPSESSID=a9bd3686d9c53a3a8c0842c8886b564b;security\_level=0" --dbs
 
