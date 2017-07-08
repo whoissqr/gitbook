@@ -12,7 +12,7 @@
 
 ![](/pentest/access-bWAPP-from-kali.png)
 
-1. Go to SQL Injection \(GET/Search\)
+4. Go to SQL Injection \(GET/Search\)
 
 ![](/pentest/choose-SQL-GET.png)
 
